@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		936E32B42AFCF60B0024DB64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E32B32AFCF60B0024DB64 /* User.swift */; };
+		936E32B62AFD11690024DB64 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E32B52AFD11690024DB64 /* CurrentUserProfileView.swift */; };
 		939EC9BE2AF9027B007F6329 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939EC9BD2AF9027B007F6329 /* MainTabView.swift */; };
 		939EC9C02AF903CE007F6329 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939EC9BF2AF903CE007F6329 /* ProfileView.swift */; };
 		939EC9C22AF90B25007F6329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939EC9C12AF90B25007F6329 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		936E32B32AFCF60B0024DB64 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		936E32B52AFD11690024DB64 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		939EC9BD2AF9027B007F6329 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		939EC9BF2AF903CE007F6329 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		939EC9C12AF90B25007F6329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		939EC9B22AF900D9007F6329 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				936E32B32AFCF60B0024DB64 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				939EC9CC2AFA2282007F6329 /* LoginView.swift */,
-				939EC9D42AFA3B14007F6329 /* CreateUserNameView.swift */,
 				939EC9CE2AFA2C7E007F6329 /* AddEmailView.swift */,
+				939EC9D42AFA3B14007F6329 /* CreateUserNameView.swift */,
 				939EC9D62AFA3E67007F6329 /* CreatePasswordView.swift */,
 				939EC9DC2AFB90A1007F6329 /* CompleteSignUpView.swift */,
 			);
@@ -125,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				939EC9BF2AF903CE007F6329 /* ProfileView.swift */,
+				936E32B52AFD11690024DB64 /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -282,9 +288,11 @@
 				939EC9D52AFA3B14007F6329 /* CreateUserNameView.swift in Sources */,
 				939EC9C52AF910F6007F6329 /* UserStatView.swift in Sources */,
 				939EC9CD2AFA2282007F6329 /* LoginView.swift in Sources */,
+				936E32B62AFD11690024DB64 /* CurrentUserProfileView.swift in Sources */,
 				93F94ACE2AF8FD110004E193 /* ContentView.swift in Sources */,
 				939EC9CF2AFA2C7E007F6329 /* AddEmailView.swift in Sources */,
 				939EC9DD2AFB90A1007F6329 /* CompleteSignUpView.swift in Sources */,
+				936E32B42AFCF60B0024DB64 /* User.swift in Sources */,
 				939EC9CB2AF982C2007F6329 /* SearchView.swift in Sources */,
 				939EC9D12AFA3103007F6329 /* IGTextFieldModifier.swift in Sources */,
 				93F94ACC2AF8FD110004E193 /* InstagramApp.swift in Sources */,
@@ -432,7 +440,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +473,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
