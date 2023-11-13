@@ -8,25 +8,30 @@
 import SwiftUI
 
 struct FeedCell: View {
+    
+    let post: Post
+    
     var body: some View {
         VStack{
             // image + username
             HStack{
-                Image("1")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                
-                Text("specegirl")
-                    .font(.footnote)
-                    .fontWeight(.semibold)
+                if let user = post.user{
+                    Image(user.profileImageURL ?? "")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    
+                    Text(user.userName)
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                }
                 Spacer()
             }
             .padding(.leading)
             
             //post image
-            Image("1")
+            Image(post.imageUrl)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400)
@@ -62,7 +67,7 @@ struct FeedCell: View {
             
             //likes label
             
-            Text("23 likes")
+            Text("\(post.likes) likes")
                 .font(.footnote)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -72,8 +77,8 @@ struct FeedCell: View {
             //caption label
             
             HStack {
-                Text("spacegirl ").fontWeight(.semibold) +
-                Text("This is test caption")
+                Text("\(post.user?.userName ?? "")").fontWeight(.semibold) +
+                Text(post.caption)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .font(.footnote)
@@ -91,5 +96,5 @@ struct FeedCell: View {
 }
 
 #Preview {
-    FeedCell()
+    FeedCell(post: Post.MOCK_POSTS[4])
 }
