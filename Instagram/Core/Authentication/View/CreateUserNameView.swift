@@ -1,36 +1,38 @@
 //
-//  CompleteSignUpView.swift
+//  CreateUserNameView.swift
 //  Instagram
 //
-//  Created by Kate Kashko on 8.11.2023.
+//  Created by Kate Kashko on 7.11.2023.
 //
 
 import SwiftUI
 
-struct CompleteSignUpView: View {
+struct CreateUserNameView: View {
     @Environment(\.dismiss) var dismiss
-    
+    @EnvironmentObject var viewModel: RegistrationViewModel
     
     var body: some View {
         VStack(spacing: 12){
-            Text("Welcome to Instagram, ")
+            Text("Create user name")
                 .font(.title2)
                 .fontWeight(.bold)
-                .multilineTextAlignment(.center)
                 .padding(.top)
             
-            Text("Click bellow to complete registration and start using Instagram.")
+            Text("Pick a username for your new account. You can always change it later.")
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
+            TextField("Username", text: $viewModel.username)
+                .autocapitalization(.none)
+                .modifier(IGTextFieldModifier())
             
-            Button{
-                Text("Complete sign up")
-//                    .navigationBarBackButtonHidden(true)
+            NavigationLink{
+                CreatePasswordView()
+                    .navigationBarBackButtonHidden()
             } label: {
-                Text("Complete sign up")
+                Text("Next")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
@@ -39,9 +41,9 @@ struct CompleteSignUpView: View {
                     .cornerRadius(8)
             }
             .padding(.vertical)
-
+            Spacer()
         }
-        .toolbar{
+        .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Image(systemName: "chevron.left")
                     .imageScale(.large)
@@ -53,6 +55,7 @@ struct CompleteSignUpView: View {
     }
 }
 
+
 #Preview {
-    CompleteSignUpView()
+    CreateUserNameView()
 }

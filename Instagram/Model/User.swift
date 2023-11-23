@@ -17,10 +17,10 @@ struct User: Identifiable, Hashable, Codable{
 
 extension User {
     static var MOCK_USERS: [User] = [
-        .init(id: NSUUID().uuidString, userName: "Kate", profileImageURL: "1", fullName: "Name Surname0" , bio: "Just nice person" , email: "aaaaa@gmail.com" ),
-        .init(id: NSUUID().uuidString, userName: "Anna", profileImageURL: "2", fullName: "Name Surname1" , bio: "Just nice person" , email: "bbbbb@gmail.com" ),
-        .init(id: NSUUID().uuidString, userName: "Sofia", profileImageURL: "3", fullName: "Name Surname2" , bio: "Just nice person" , email: "ccccc@gmail.com" ),
-        .init(id: NSUUID().uuidString, userName: "Elsa", profileImageURL: "4", fullName: "Name Surname3" , bio: "Just nice person" , email: "ddddd@gmail.com" ),
-        .init(id: NSUUID().uuidString, userName: "Lola", profileImageURL: "5", fullName: "Name Surname4" , bio: "Just nice person" , email: "eeeee@gmail.com" )
+        .init(id: NSUUID().uuidString, userName: "Kate", profileImageURL: "1", fullName: "Kate Mate" , bio: "Just nice person" , email: "aaaaa@gmail.com" ),
+        .init(id: NSUUID().uuidString, userName: "Anna", profileImageURL: "2", fullName: "Anna Manna" , bio: "Creative and funny" , email: "bbbbb@gmail.com" ),
+        .init(id: NSUUID().uuidString, userName: "Sofia", profileImageURL: "3", fullName: "Sofia Mofia" , bio: "Love and Pease" , email: "ccccc@gmail.com" ),
+        .init(id: NSUUID().uuidString, userName: "Elsa", profileImageURL: "4", fullName: "Elsa Melsa" , bio: "Working..." , email: "ddddd@gmail.com" ),
+        .init(id: NSUUID().uuidString, userName: "Lola", profileImageURL: "5", fullName: "Lola Manola" , bio: "Welcome to my page!" , email: "eeeee@gmail.com" )
     ]
 }

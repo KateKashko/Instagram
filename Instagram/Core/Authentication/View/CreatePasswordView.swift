@@ -1,5 +1,5 @@
 //
-//  CreateUserNameView.swift
+//  CreatePasswordView.swift
 //  Instagram
 //
 //  Created by Kate Kashko on 7.11.2023.
@@ -7,30 +7,32 @@
 
 import SwiftUI
 
-struct CreateUserNameView: View {
-    @State private var username = ""
+struct CreatePasswordView: View {
+  
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
     
     var body: some View {
         VStack(spacing: 12){
-            Text("Create user name")
+            Text("Create a password")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
             
-            Text("Pick a username for your new account. You can always change it later.")
+            Text("Your password must be at least 6 characters in length.")
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("Username", text: $username)
+            SecureField("Password", text: $viewModel.password)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
+                .padding(.top)
             
             NavigationLink{
-                CreatePasswordView()
-                    .navigationBarBackButtonHidden()
+                CompleteSignUpView()
+                    .navigationBarBackButtonHidden(true)
             } label: {
                 Text("Next")
                     .font(.subheadline)
@@ -41,9 +43,10 @@ struct CreateUserNameView: View {
                     .cornerRadius(8)
             }
             .padding(.vertical)
+          
             Spacer()
         }
-        .toolbar {
+        .toolbar{
             ToolbarItem(placement: .navigationBarLeading) {
                 Image(systemName: "chevron.left")
                     .imageScale(.large)
@@ -55,7 +58,6 @@ struct CreateUserNameView: View {
     }
 }
 
-
 #Preview {
-    CreateUserNameView()
+    CreatePasswordView()
 }
