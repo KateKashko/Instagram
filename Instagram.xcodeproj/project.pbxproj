@@ -61,6 +61,7 @@
 		93F94ACC2AF8FD110004E193 /* InstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F94ACB2AF8FD110004E193 /* InstagramApp.swift */; };
 		93F94ACE2AF8FD110004E193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F94ACD2AF8FD110004E193 /* ContentView.swift */; };
 		93F94AD32AF8FD120004E193 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F94AD22AF8FD120004E193 /* Preview Assets.xcassets */; };
+		93FB823D2B2C8F1E002D4269 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FB823C2B2C8F1E002D4269 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		93F94ACB2AF8FD110004E193 /* InstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramApp.swift; sourceTree = "<group>"; };
 		93F94ACD2AF8FD110004E193 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93F94AD22AF8FD120004E193 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93FB823C2B2C8F1E002D4269 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				9342C32D2B0F589600236C2F /* RegistrationViewModel.swift */,
+				93FB823C2B2C8F1E002D4269 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				93D5FB882B02432D00020ED6 /* PostGridView.swift in Sources */,
 				939EC9CF2AFA2C7E007F6329 /* AddEmailView.swift in Sources */,
 				931D2C792B05060C00861036 /* ContentViewModel.swift in Sources */,
+				93FB823D2B2C8F1E002D4269 /* LoginViewModel.swift in Sources */,
 				9342C32E2B0F589600236C2F /* RegistrationViewModel.swift in Sources */,
 				93D5FB8E2B024DC400020ED6 /* UploadPostViewModel.swift in Sources */,
 				93D5FB8A2B02459500020ED6 /* ProfileHeaderView.swift in Sources */,
